@@ -263,12 +263,13 @@
             <a class="btn primary" href="mailto:amvv2362@gmail.com" data-i18n="contactCTA1">راسلنا بريد</a>
           </div>
 
-          <p class="note" data-i18n="contactNote">* سيتم حفظ الطلب في النظام وإرسال إشعار إلى بريدك عبر Netlify.</p>
+          <p class="note" data-i18n="contactNote">* سيتم إرسال الطلب إلى بريدنا الإلكتروني مباشرة عبر النموذج.</p>
         </div>
 
         <!-- Netlify Form -->
-        <form class="form card formTech" name="quote" method="POST" data-netlify="true" action="/thanks.html">
-          <input type="hidden" name="form-name" value="quote" />
+        <form action="https://formspree.io/f/xpqjzdzz" method="POST" class="form card formTech">
+
+          <input type="hidden" name="_subject" value="طلب عرض سعر جديد من موقع Four Seasons" />
 
           <div class="formHead">
             <h3 data-i18n="formTitle">طلب عرض سعر</h3>
@@ -334,4 +335,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
