@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Four Seasons | LED • Lighting • AV</title>
+  <meta name="description" content="Four Seasons — حلول شاشات LED والإضاءة والأنظمة السمعية البصرية للمؤتمرات والمعارض والحفلات والافتتاحات." />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Four Seasons | LED • Lighting • AV" />
+  <meta property="og:description" content="LED, Lighting, AV — تصميم، تركيب، تشغيل ودعم ميداني." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Topbar -->
+  <header class="top">
+    <div class="container topRow">
+      <a class="brand" href="#home" aria-label="Four Seasons Home">
+        <img class="logoImg" src="logo.png" alt="Four Seasons Logo" />
+        <div class="brandText">
+          <strong>Four Seasons</strong>
+          <span data-i18n="brandTag">LED • Lighting • AV</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about" data-i18n="navAbout">عن الشركة</a>
+        <a href="#services" data-i18n="navServices">الخدمات</a>
+        <a href="#projects" data-i18n="navProjects">المشاريع</a>
+        <a href="#contact" data-i18n="navContact">تواصل</a>
+      </nav>
+
+      <div class="topActions">
+        <button class="chip" id="langBtn" type="button" aria-label="Language Toggle">EN</button>
+        <button class="menuBtn" aria-label="Menu" type="button" onclick="toggleMenu()">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileNav" class="mobileNav" aria-label="Mobile Navigation">
+      <a href="#about" onclick="toggleMenu()" data-i18n="navAbout">عن الشركة</a>
+      <a href="#services" onclick="toggleMenu()" data-i18n="navServices">الخدمات</a>
+      <a href="#projects" onclick="toggleMenu()" data-i18n="navProjects">المشاريع</a>
+      <a href="#contact" onclick="toggleMenu()" data-i18n="navContact">تواصل</a>
+      <button class="chip mobileLang" id="langBtn2" type="button">EN</button>
+    </div>
+
+    <div class="glow" aria-hidden="true"></div>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container heroGrid">
+        <div class="heroText">
+          <div class="badge">
+            <span class="dot red"></span>
+            <span class="dot green"></span>
+            <span class="dot blue"></span>
+            <span class="dot yellow"></span>
+            <span data-i18n="heroBadge">Tech-grade event production</span>
+          </div>
+
+          <h1 data-i18n="heroTitle">Four Seasons — حلول LED وإضاءة وAV بشكل احترافي</h1>
+          <p class="lead" data-i18n="heroLead">
+            تجهيز مؤتمرات ومعارض وحفلات وافتتاحات: تصميم، تركيب، Mapping، معايرة ألوان، تشغيل ودعم ميداني.
+          </p>
+
+          <div class="cta">
+            <a class="btn primary" href="#contact" data-i18n="heroCTA1">اطلب عرض سعر</a>
+            <a class="btn ghost" href="#projects" data-i18n="heroCTA2">شاهد أعمالنا</a>
+          </div>
+
+          <div class="kpis">
+            <div class="kpi">
+              <div class="k">+3</div>
+              <div class="t" data-i18n="kpi1">سنوات خبرة</div>
+            </div>
+            <div class="kpi">
+              <div class="k">LED</div>
+              <div class="t" data-i18n="kpi2">Indoor / Outdoor</div>
+            </div>
+            <div class="kpi">
+              <div class="k">DMX</div>
+              <div class="t" data-i18n="kpi3">Art-Net / sACN</div>
+            </div>
+            <div class="kpi">
+              <div class="k">AV</div>
+              <div class="t" data-i18n="kpi4">Switching / Playback</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="heroPanel">
+          <div class="panelHeader">
+            <span class="pill redT">LED</span>
+            <span class="pill greenT">Lighting</span>
+            <span class="pill blueT">AV</span>
+            <span class="pill yellowT">Support</span>
+          </div>
+
+          <h2 data-i18n="heroWhy">لماذا Four Seasons؟</h2>
+          <ul class="list">
+            <li data-i18n="why1">تركيب سريع وتنظيم كابلات احترافي</li>
+            <li data-i18n="why2">Mapping مضبوط + ضبط Load/Resolution</li>
+            <li data-i18n="why3">معايرة ألوان (WB / Gamma / Brightness)</li>
+            <li data-i18n="why4">تشغيل أثناء الحدث وحلول فورية للأعطال</li>
+          </ul>
+
+          <div class="gridMini">
+            <div class="miniCard">
+              <span class="miniTitle" data-i18n="mini1t">LED Wall</span>
+              <small data-i18n="mini1s">Calibration & Processor setup</small>
+            </div>
+            <div class="miniCard">
+              <span class="miniTitle" data-i18n="mini2t">Lighting</span>
+              <small data-i18n="mini2s">Patch, Universes, Scenes</small>
+            </div>
+            <div class="miniCard">
+              <span class="miniTitle" data-i18n="mini3t">AV</span>
+              <small data-i18n="mini3s">Switching, Playback, Audio</small>
+            </div>
+            <div class="miniCard">
+              <span class="miniTitle" data-i18n="mini4t">On-site</span>
+              <small data-i18n="mini4s">Live support & monitoring</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bgNoise" aria-hidden="true"></div>
+      <div class="waves" aria-hidden="true"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 data-i18n="aboutTitle">عن الشركة</h2>
+          <p class="muted" data-i18n="aboutLead">
+            حلول تقنية للفعاليات: نركز على الجودة، الأمان، وسلاسة التشغيل لضمان تجربة عرض قوية.
+          </p>
+        </div>
+
+        <div class="aboutGrid">
+          <div class="aboutCard">
+            <h3 data-i18n="about1t">خبرة ميدانية</h3>
+            <p data-i18n="about1d">من التخطيط حتى التشغيل — تركيب، Mapping، معايرة، ودعم كامل أثناء الحدث.</p>
+          </div>
+          <div class="aboutCard">
+            <h3 data-i18n="about2t">شبكات وكونترول</h3>
+            <p data-i18n="about2d">Art-Net / sACN، توزيع يونيفرس، Patch، وربط الأنظمة بشكل مستقر.</p>
+          </div>
+          <div class="aboutCard">
+            <h3 data-i18n="about3t">تجربة عميل أفضل</h3>
+            <p data-i18n="about3d">تواصل سريع، حلول واضحة، وتسليم شغل نظيف واحترافي.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section alt">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 data-i18n="servicesTitle">الخدمات</h2>
+          <p class="muted" data-i18n="servicesLead">خدمات متكاملة لتجهيز فعاليتك من A إلى Z.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card neon">
+            <div class="cardTop">
+              <span class="tag redT">LED</span>
+              <span class="tagGhost" data-i18n="s1tag">Supply & Install</span>
+            </div>
+            <h3 data-i18n="s1t">توريد وتركيب شاشات</h3>
+            <p data-i18n="s1d">شاشات داخلية/خارجية، كابينتات، تنظيم طاقة وبيانات، اختبار البكسلات.</p>
+          </article>
+
+          <article class="card neon">
+            <div class="cardTop">
+              <span class="tag greenT">Mapping</span>
+              <span class="tagGhost" data-i18n="s2tag">Processor Setup</span>
+            </div>
+            <h3 data-i18n="s2t">إعداد البروسيسور</h3>
+            <p data-i18n="s2d">Load، Resolution، Screen config، Sender/Receiver، وحلول مشاكل الإشارة.</p>
+          </article>
+
+          <article class="card neon">
+            <div class="cardTop">
+              <span class="tag blueT">Control</span>
+              <span class="tagGhost" data-i18n="s3tag">DMX / Network</span>
+            </div>
+            <h3 data-i18n="s3t">إضاءة وكونترول</h3>
+            <p data-i18n="s3d">DMX/Art-Net/sACN، Patch، تقسيم يونيفرس، ربط وتشغيل البرامج.</p>
+          </article>
+
+          <article class="card neon">
+            <div class="cardTop">
+              <span class="tag yellowT">Show</span>
+              <span class="tagGhost" data-i18n="s4tag">On-site Support</span>
+            </div>
+            <h3 data-i18n="s4t">تشغيل ودعم ميداني</h3>
+            <p data-i18n="s4d">إدارة تشغيل الحدث، مراقبة الأداء، وحلول سريعة لأي أعطال.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 data-i18n="projectsTitle">المشاريع</h2>
+          <p class="muted" data-i18n="projectsLead">اختَر القسم وشاهد صور الأعمال. اضغط على أي صورة للتكبير.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Project Categories">
+          <button class="tab isActive" type="button" data-cat="conferences" role="tab" data-i18n="tab1">المؤتمرات</button>
+          <button class="tab" type="button" data-cat="exhibitions" role="tab" data-i18n="tab2">المعارض</button>
+          <button class="tab" type="button" data-cat="concerts" role="tab" data-i18n="tab3">الحفلات</button>
+          <button class="tab" type="button" data-cat="openings" role="tab" data-i18n="tab4">الافتتاحات</button>
+        </div>
+
+        <div class="galleryGrid" id="galleryGrid">
+          <!-- Filled by JS -->
+        </div>
+
+        <div class="hint" data-i18n="projectsHint">
+          تلميح: ضع الصور داخل مجلد الموقع بأسماء مثل: conf1.jpg … expo1.jpg … party1.jpg … open1.jpg
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="container contactGrid">
+        <div class="contactInfo">
+          <div class="sectionHead">
+            <h2 data-i18n="contactTitle">تواصل معنا</h2>
+            <p class="muted" data-i18n="contactLead">اكتب تفاصيل مشروعك وسنرد عليك بسرعة.</p>
+          </div>
+
+          <div class="contactBox">
+            <div class="line">
+              <strong data-i18n="phoneLbl">الهاتف:</strong>
+              <a href="tel:+966531194987">+966 53 119 4987</a>
+            </div>
+            <div class="line">
+              <strong data-i18n="emailLbl">الإيميل:</strong>
+              <a href="mailto:amvv2362@gmail.com">amvv2362@gmail.com</a>
+            </div>
+            <div class="line">
+              <strong data-i18n="cityLbl">المدينة:</strong>
+              <span data-i18n="cityVal">جدة</span>
+            </div>
+          </div>
+
+          <div class="cta">
+            <a class="btn ghost" href="#projects" data-i18n="contactCTA2">شاهد المشاريع</a>
+            <a class="btn primary" href="mailto:amvv2362@gmail.com" data-i18n="contactCTA1">راسلنا بريد</a>
+          </div>
+
+          <p class="note" data-i18n="contactNote">* سيتم حفظ الطلب في النظام وإرسال إشعار إلى بريدك عبر Netlify.</p>
+        </div>
+
+        <!-- Netlify Form -->
+        <form class="form card formTech" name="quote" method="POST" data-netlify="true" action="/thanks.html">
+          <input type="hidden" name="form-name" value="quote" />
+
+          <div class="formHead">
+            <h3 data-i18n="formTitle">طلب عرض سعر</h3>
+            <span class="formPill" data-i18n="formPill">Fast Response</span>
+          </div>
+
+          <div class="field">
+            <label data-i18n="nameLbl">الاسم</label>
+            <input name="name" required placeholder="اسمك" />
+          </div>
+
+          <div class="field">
+            <label data-i18n="phone2Lbl">رقم الجوال</label>
+            <input name="phone" required placeholder="05xxxxxxxx" inputmode="tel" />
+          </div>
+
+          <div class="field">
+            <label data-i18n="typeLbl">نوع الفعالية</label>
+            <select name="event_type" required>
+              <option value="" data-i18n="typePick">اختر</option>
+              <option value="Conference" data-i18n="type1">مؤتمر</option>
+              <option value="Exhibition" data-i18n="type2">معرض</option>
+              <option value="Concert" data-i18n="type3">حفلة</option>
+              <option value="Opening" data-i18n="type4">افتتاح</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label data-i18n="detailsLbl">تفاصيل الطلب</label>
+            <textarea name="details" required rows="6" placeholder="مثال: شاشة 6×3m P2.6 بالرياض..."></textarea>
+          </div>
+
+          <button class="btn primary full" type="submit" data-i18n="sendBtn">إرسال الطلب</button>
+
+          <p class="note small" data-i18n="formNote">
+            * بعد الإرسال سيتم تحويلك لصفحة نجاح.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footerRow">
+      <p>© <span id="y"></span> <span data-i18n="footer">Four Seasons — جميع الحقوق محفوظة</span></p>
+      <div class="colors" aria-hidden="true">
+        <span class="sw red"></span>
+        <span class="sw green"></span>
+        <span class="sw blue"></span>
+        <span class="sw yellow"></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lbClose" id="lbClose" aria-label="Close">✕</button>
+    <button class="lbNav lbPrev" id="lbPrev" aria-label="Previous">‹</button>
+    <img id="lbImg" alt="Project image" />
+    <button class="lbNav lbNext" id="lbNext" aria-label="Next">›</button>
+    <div class="lbCaption" id="lbCaption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

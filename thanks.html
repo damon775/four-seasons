@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تم الإرسال | Four Seasons</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .thanksWrap{min-height:70vh; display:flex; align-items:center; justify-content:center; padding:40px 0}
+    .thanksCard{width:min(720px,92%); text-align:center; padding:26px; border-radius:18px;
+      background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.10)}
+    .thanksCard h1{margin:0 0 10px}
+    .thanksCard p{color:rgba(234,240,255,.75); margin:0 0 16px; line-height:1.8}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="container topRow">
+      <a class="brand" href="/" aria-label="Home">
+        <img class="logoImg" src="logo.png" alt="Four Seasons Logo" />
+        <div class="brandText">
+          <strong>Four Seasons</strong>
+          <span>LED • Lighting • AV</span>
+        </div>
+      </a>
+    </div>
+    <div class="glow" aria-hidden="true"></div>
+  </header>
+
+  <main class="thanksWrap">
+    <div class="thanksCard">
+      <h1>✅ تم إرسال طلبك بنجاح</h1>
+      <p>شكرًا لك — سنرد عليك قريبًا.</p>
+      <a class="btn primary" href="/">العودة للرئيسية</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footerRow">
+      <p>© <span id="y"></span> Four Seasons</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
